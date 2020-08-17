@@ -1,0 +1,65 @@
+ <html>
+  <body>
+    <script>
+     class Calculadora{
+        Somar() {
+     //Leitura
+     // var n1 = document.querySelectorAll("input")[0].value;
+     // var n2=document.querySelectorAll("input")[1].value;
+     var n1 = num1.value;
+     var n2 = num2.value;
+
+     //Calculo
+    var Soma = parseFloat(n1) + parseFloat(n2); 
+    
+     //Saída
+     alert(Soma);
+}
+
+      Subtrair(){
+    //var n1 = document.querySelectorAll("input")[0].valeu;
+    //var n2 = document.querySelectorAll("input")[1].valeu;
+    var n1 = num1.value;
+    var n2 = num2.value;
+
+    var Subtrair = parseFloat(n1) - parseFloat(n2);
+    alert(Subtrair);
+}
+     multiplicar() {
+    //var n1 = document.querySelectorAll("input")[0].value;
+    //var n2 = document.querySelectorAll("input")[1].value;
+    var n1 = num1.value;
+    var n2 = num2.value;
+    var multiplicar = parseFloat(n1) * parseFloat(n2);
+    alert(multiplicar);
+}
+     Dividir() {
+    //var n1 = document.querySelectorAll("input")[0].value;
+    //var n2 = document.querySelectorAll("input")[1].value;
+    var n1 = num1.value;
+    var n2 = num2.value;
+    var Dividir = parseFloat(n1) / parseFloat(n2);
+if (n2 != 0) {
+    alert(Dividir);
+} else {
+    alert("Digite um número diferente de zero!!!");
+}
+} 
+}
+     var calc1 = new Calculadora();
+     var calc2 = new Calculadora(); 
+   </script>
+
+    <head>
+        
+    </body>
+      <h1>Calculadora</h1>
+  <input id="num1" type="number" placeholder="Número 1"/>
+  <input id="num2" type="number" placeholder="Número 2"/>
+  <button onclick="calc1.Somar()">Somar<button>
+  <button onclick="calc1.Subtrair()">Subtrair</button>
+  <button onclick="calc1.multiplicar()">multiplicar</button>
+  <button onclick="calc1.Dividir()">Dividir</button>
+  </body>
+ </html>
+  
